@@ -15,6 +15,6 @@
   "browser_action": {
     "default_icon": "icons/poison_bottle.png",
     "default_title": "Data Poisoner",
-    "default_popup": "popup/popup1.html"
+    "default_popup": "popup/popup_main.html"
   }
 }

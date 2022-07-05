@@ -1,21 +1,17 @@
-let x = 1;
-
 function listenForClicks() {
 
     document.addEventListener("click", (e) => {
 
-        function changePopup(){
-            location.href=`popup${x}.html`;
+        function changePopup(x){
+            location.href=`popup_${x}.html`;
         }
-
-        if (e.target.classList.contains("option")) {
-            x++;
-            changePopup();
+        if (e.target.getAttribute('id') === "browser_history") {
+            changePopup("browser_history");
         }
-        if (e.target.classList.contains("return")) {
-            x = 1;
-            changePopup();
+        if (e.target.getAttribute('id') === "main") {
+            changePopup("main");
         }
     });
 }
 listenForClicks();
+
