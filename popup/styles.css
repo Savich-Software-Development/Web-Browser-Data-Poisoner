@@ -4,6 +4,7 @@ html, body {
 }
 
 header {
+    padding-top: 0.3em;
     text-align: center;
     font-size: 1.7em;
     color: #ffffff;
@@ -12,6 +13,24 @@ header {
 hr {
     color: #aaaaaa;
 }
+
+#top, #bottom, #left, #right {
+    background: #ffb347;
+    position: fixed;
+}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 0.35em;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+    left: 0; right: 0;
+    height: 0.35em;
+}
+#top { top: 0;}
+#bottom { bottom: 0; }
 
 .button {
     padding: 0.5em;
