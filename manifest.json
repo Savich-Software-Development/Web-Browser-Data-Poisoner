@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Data Poisoner",
+  "version": "0.1.0",
+  "description": "Fills browser history with random/specific sites so organizations have a harder time profiling you.",
+  "homepage_url": "https://github.com/Savich-Software-Development/Web-Browser-Data-Poisoner",
+  "icons": {
+    "96": "icons/poison_bottle.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/poison_bottle.png",
+    "default_title": "Data Poisoner",
+    "default_popup": "popup/popup1.html"
+  }
+}

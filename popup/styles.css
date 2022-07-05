@@ -1,0 +1,26 @@
+html, body {
+    flex-flow: column;
+    background: #212121;
+}
+
+header {
+    text-align: center;
+    font-size: 1.7em;
+    color: #ffffff;
+}
+
+hr {
+    color: #aaaaaa;
+}
+
+.button {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.3em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #3d3d3d;
+}
