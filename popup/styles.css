@@ -1,13 +1,6 @@
 html, body {
-    flex-flow: column;
-    background: #212121;
-}
 
-header {
-    padding-top: 0.3em;
-    text-align: center;
-    font-size: 1.7em;
-    color: #ffffff;
+    background: #212121;
 }
 
 hr {
@@ -32,10 +25,31 @@ hr {
 #top { top: 0;}
 #bottom { bottom: 0; }
 
+.header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding-top: 0.3em;
+    padding-left: 1%;
+    font-size: 1.7em;
+    text-align: center;
+    color: #ffffff;
+}
+
 .button {
     padding: 0.5em;
     text-align: center;
     font-size: 1.3em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button_return {
+    position: absolute;
+    justify-content: left;
+    padding-top: 0.3em;
+    margin: 10px;
     color: #ffffff;
     cursor: pointer;
 }
