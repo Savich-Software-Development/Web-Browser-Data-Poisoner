@@ -45,7 +45,7 @@ hr {
     cursor: pointer;
 }
 
-.button_return {
+.button-return {
     position: absolute;
     justify-content: left;
     padding-top: 0.3em;

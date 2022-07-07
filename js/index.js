@@ -1,7 +1,12 @@
-//TODO Implement Features
 const urlList = ["https://twitter.com", "https://example.org"];
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+document.querySelector('#browser-history-poisoner-run').addEventListener("click", () => {
+        browserHistoryPoisoner();
+});
+document.querySelector('#open-new-window').addEventListener("click", () => {
+    openNewWindow();
+});
 
 function browserHistoryPoisoner() {
     function createTab(x) {
@@ -15,18 +20,17 @@ function browserHistoryPoisoner() {
         });
     }
 
+
     const tabLoop = async () => {
         for (const a of urlList) {
             createTab(a);
-            await wait(3000)
+            await wait(2000);
             removeTab();
         }
     }
     tabLoop();
 }
 
-document.addEventListener("click", (e) => {
-    if (e.target.getAttribute('id') === "browser_history_poisoner") {
-        browserHistoryPoisoner();
-    }
-});
+function openNewWindow() {
+    browser.windows.create();
+}
