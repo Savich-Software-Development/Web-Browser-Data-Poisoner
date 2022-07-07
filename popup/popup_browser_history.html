@@ -12,17 +12,25 @@
     </div>
     <div class="header">Browser History Poisoner</div>
 
-<hr>
+    <hr>
 
-    <ul>
-        <input type="checkbox">Dooms Day Prepper</input>
-        <li>Billionaire</li>
-        <li>Influencer</li>
-    </ul>
+        <div class="button option">
+            <input type="checkbox" id="1">
+            <label for="1">Dooms Day Prepper</label>
+        </div>
+        <div class="button option">
+            <input type="checkbox" id="2">
+            <label for="2">Billionaire</label>
+        </div>
+        <div class="button option">
+            <input type="checkbox" id="3">
+            <label for="3">Influencer</label>
+        </div>
 
-    <div class="">
-        <div class="button option">Run Poisoner</div>
-        <div class="button option">Add custom url list</div>
+    <hr>
+
+    <div>
+        <div class="button option" id="browser_history_poisoner">Run Poisoner</div>
     </div>
 
 
@@ -31,7 +39,8 @@
 <div id="top"></div>
 <div id="bottom"></div>
 
-<script src="update_gui.js"></script>
+    <script src="update_gui.js"></script>
+    <script src="../index.js"></script>
 
 </body>
 </html>

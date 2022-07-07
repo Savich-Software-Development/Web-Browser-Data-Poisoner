@@ -1,4 +1,4 @@
-function listenForClicks() {
+function changePage() {
 
     document.addEventListener("click", (e) => {
 
@@ -13,5 +13,5 @@ function listenForClicks() {
         }
     });
 }
-listenForClicks();
+changePage();
 
